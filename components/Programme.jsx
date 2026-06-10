@@ -24,7 +24,7 @@ export default function Programme() {
 
         <div className={styles.block}>
           <div className={styles.blockHeader}>
-            <span className={styles.blockIcon}>✝</span>
+            <span className={styles.blockIcon}></span>
             <h3 className={styles.blockTitle}>Union Religieuse</h3>
             <p className={styles.blockSub}>Église Anglicane de Tunis</p>
           </div>
@@ -42,7 +42,7 @@ export default function Programme() {
 
         <div className={styles.block}>
           <div className={styles.blockHeader}>
-            <span className={styles.blockIcon}>♪</span>
+            <span className={styles.blockIcon}></span>
             <h3 className={styles.blockTitle}>Soirée</h3>
             <p className={styles.blockSub}>Salle Zitouna · Ibn Khaldoun</p>
           </div>
