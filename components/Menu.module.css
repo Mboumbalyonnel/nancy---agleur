@@ -1,0 +1,129 @@
+.menu {
+  background: var(--navy);
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 7vw, 72px);
+  color: var(--cream);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.rule {
+  width: 40px;
+  height: 1px;
+  background: var(--blue);
+  opacity: 0.5;
+  margin: 1.8rem auto 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  border-top: 0.5px solid rgba(46, 95, 163, 0.2);
+  border-left: 0.5px solid rgba(46, 95, 163, 0.2);
+}
+
+.card {
+  padding: 2rem 1.8rem;
+  border-right: 0.5px solid rgba(46, 95, 163, 0.2);
+  border-bottom: 0.5px solid rgba(46, 95, 163, 0.2);
+  transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(46, 95, 163, 0.0);
+  transition: background 0.3s;
+}
+
+.card:hover::after {
+  background: rgba(46, 95, 163, 0.06);
+}
+
+.cardSingle {
+  grid-column: span 1;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.index {
+  font-family: var(--font-caps);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--blue);
+  opacity: 0.35;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.catName {
+  font-family: var(--font-caps);
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--blue-light);
+  text-transform: uppercase;
+}
+
+.catNote {
+  font-style: italic;
+  font-size: 11px;
+  color: rgba(110, 157, 212, 0.4);
+  letter-spacing: 0;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-left: 0;
+}
+
+.item {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(234, 241, 255, 0.82);
+  line-height: 1.45;
+  padding-left: 0;
+  border-left: none;
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 1.5rem 1.2rem;
+  }
+}

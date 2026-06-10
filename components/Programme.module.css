@@ -1,0 +1,139 @@
+.prog { background: var(--bg); }
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 3rem;
+  max-width: 820px;
+  margin: 3rem auto 0;
+  align-items: start;
+}
+
+.separator {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--blue) 15%,
+    var(--blue) 85%,
+    transparent
+  );
+  opacity: 0.25;
+  align-self: stretch;
+}
+
+.block { padding: 0 0.5rem; }
+
+.blockHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.5px solid rgba(46, 95, 163, 0.2);
+}
+
+.blockIcon {
+  display: block;
+  font-size: 18px;
+  color: var(--blue);
+  opacity: 0.6;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0;
+}
+
+.blockTitle {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 0.3rem;
+}
+
+.blockSub {
+  font-family: var(--font-caps);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--blue);
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.timeline {
+  list-style: none;
+  position: relative;
+  padding-left: 2.8rem;
+  margin: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--blue) 6%,
+    var(--blue) 94%,
+    transparent
+  );
+  opacity: 0.3;
+}
+
+.item {
+  position: relative;
+  padding-bottom: 2rem;
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 4px;
+}
+
+.item:last-child { padding-bottom: 0; }
+
+.item::before {
+  content: '';
+  position: absolute;
+  left: -1.55rem;
+  top: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue);
+  opacity: 0.65;
+}
+
+.time {
+  font-family: var(--font-caps);
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: var(--blue);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.event {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 3rem 0;
+  }
+  .separator {
+    height: 1px;
+    width: 60%;
+    margin: 0 auto;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--blue) 20%,
+      var(--blue) 80%,
+      transparent
+    );
+  }
+}

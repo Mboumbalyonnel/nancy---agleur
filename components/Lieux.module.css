@@ -1,0 +1,159 @@
+.lieux { background: var(--bg-white); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border: 0.5px solid rgba(46, 95, 163, 0.2);
+  background: #f8faff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Visuel en haut ── */
+.cardVisual {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.cardImgPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, #1b3a6b 0%, #2b5ba8 100%);
+}
+
+.cardVisualOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    rgba(4, 16, 31, 0.55) 100%
+  );
+}
+
+.badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.4rem;
+  font-family: var(--font-caps);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* ── Corps ── */
+.cardBody {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex: 1;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: var(--font-caps);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--blue);
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 1.4rem;
+}
+
+/* ── Tableau méta ── */
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 0.5px solid rgba(46, 95, 163, 0.15);
+  border-bottom: 0.5px solid rgba(46, 95, 163, 0.15);
+  margin-bottom: 1.4rem;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 0.5px solid rgba(46, 95, 163, 0.08);
+}
+
+.metaRow:last-child { border-bottom: none; }
+
+.metaLabel {
+  font-family: var(--font-caps);
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--blue);
+  text-transform: uppercase;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.metaValue {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+/* ── Carte & bouton ── */
+.mapWrap {
+  border: 0.5px solid rgba(46, 95, 163, 0.2);
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+}
+
+.mapBtn {
+  display: block;
+  text-align: center;
+  font-family: var(--font-caps);
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--blue);
+  text-transform: uppercase;
+  padding: 0.7rem;
+  border: 0.5px solid rgba(46, 95, 163, 0.35);
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.mapBtn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .grid { grid-template-columns: 1fr; }
+  .cardVisual { height: 160px; }
+}

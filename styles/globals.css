@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IM+Fell+English:ital@0;1&family=Cinzel:wght@400;600&display=swap');
+
+/* ── TOKENS ── */
+:root {
+  --navy:       #04101f;
+  --navy-mid:   #0a1628;
+  --navy-soft:  #0d1e38;
+  --blue:       #2e5fa3;
+  --blue-light: #6e9dd4;
+  --blue-pale:  #a8c4f0;
+  --cream:      #eaf1ff;
+  --bg:         #f0f4fb;
+  --bg-white:   #ffffff;
+  --text:       #0a1628;
+  --text-muted: #4a6080;
+  --gold:       #c9a84c;
+
+  --font-display: 'IM Fell English', serif;
+  --font-serif:   'Cormorant Garamond', serif;
+  --font-caps:    'Cinzel', serif;
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+
+  --transition: 0.25s ease;
+}
+
+/* ── RESET ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-serif);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ── SHARED ── */
+.section {
+  padding: 5rem 2rem;
+  border-bottom: 0.5px solid rgba(46, 95, 163, 0.1);
+}
+
+.section-label {
+  font-family: var(--font-caps);
+  font-size: 9px;
+  letter-spacing: 5px;
+  color: var(--blue);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 38px);
+  text-align: center;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.divider-line {
+  flex: 1;
+  height: 0.5px;
+  background: linear-gradient(to right, transparent, var(--blue), transparent);
+}
+.divider-diamond {
+  width: 7px; height: 7px;
+  background: var(--blue);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.ornament {
+  color: var(--blue);
+  font-size: 16px;
+  letter-spacing: 10px;
+  text-align: center;
+  opacity: 0.45;
+  margin: 0.5rem 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .section { padding: 3.5rem 1.25rem; }
+}
