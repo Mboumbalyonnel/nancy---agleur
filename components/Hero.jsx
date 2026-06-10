@@ -86,7 +86,7 @@ export default function Hero() {
         <p className={styles.stdDate}>Samedi 4 Juillet 2026 · Tunis, Tunisie</p>
 
         <blockquote className={styles.stdVerse}>
-          « Il a fait toutes choses belles en son temps... » <br />
+          « Il fait toutes choses belles en son temps... » <br />
           <cite>— Ecclésiaste 3 : 11</cite>
         </blockquote>
 
