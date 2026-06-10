@@ -237,7 +237,7 @@ const tables = [
       'Mathyra',
       'Malicia',
       'Jean',
-      'Jonatha',
+      'Jonathan',
       'Jule Danis',
     ],
   },
