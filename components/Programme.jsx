@@ -10,7 +10,6 @@ const ceremonie = [
 
 const soiree = [
   { time: '18h00', event: 'Retrouvailles à la salle' },
-  { time: '18h30', event: 'Soirée dansante' },
   { time: '23h30', event: 'Fin de la soirée' },
 ];
 

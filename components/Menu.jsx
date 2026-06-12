@@ -9,7 +9,7 @@ const menu = [
   {
     category: 'Légumes',
     note: 'au choix',
-    items: ['Feuilles de manioc au maquereau fumé', 'Aubergines à l\'oseille'],
+    items: ['Aubergines à l \' oseille', 'Feuilles de manioc au maquereau fumé'],
   },
   {
     category: 'Poulet',
@@ -19,7 +19,8 @@ const menu = [
   {
     category: 'Accompagnement',
     note: 'au choix',
-    items: ['Riz rouge', 'Riz blanc', 'Pomme de terre'],
+    items: ['Riz rouge', 'Riz blanc'],
+    extras: [{ label: 'Pomme de terre', note: 'en supplément' }],
   },
   {
     category: 'Dessert',
@@ -51,11 +52,23 @@ export default function Menu() {
                 {cat.note && <span className={styles.catNote}>{cat.note}</span>}
               </div>
             </div>
+
             <ul className={styles.items}>
               {cat.items.map((item, j) => (
                 <li key={j} className={styles.item}>{item}</li>
               ))}
             </ul>
+
+            {cat.extras && cat.extras.length > 0 && (
+              <ul className={styles.items}>
+                {cat.extras.map((extra, j) => (
+                  <li key={j} className={`${styles.item} ${styles.itemExtra}`}>
+                    {extra.label}
+                    {extra.note && <span className={styles.extraNote}> — {extra.note}</span>}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>

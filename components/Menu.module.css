@@ -95,6 +95,20 @@
   letter-spacing: 0;
 }
 
+.itemExtra {
+  opacity: 0.75;
+  font-style: italic;
+}
+.items + .items {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 0.5px solid rgba(46, 95, 163, 0.2);
+}
+
+.extraNote {
+  font-size: 0.8em;
+  opacity: 0.6;
+}
 .items {
   list-style: none;
   display: flex;
