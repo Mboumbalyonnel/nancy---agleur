@@ -9,7 +9,7 @@ const menu = [
   {
     category: 'Légumes',
     note: 'au choix',
-    items: ['Aubergines à l\'oseille', 'Feuilles de manioc au maquereau fumé'],
+    items: ['Aubergines à l \' oseille', 'Feuilles de manioc au maquereau fumé'],
   },
   {
     category: 'Volaille',
