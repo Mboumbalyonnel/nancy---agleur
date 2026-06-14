@@ -15,7 +15,7 @@ const tables = [
     city: 'NDOMBY JEAN LAMBER',
     names: [
       'Couple EZOUA',
-      'Famille Pst Jean x3',
+      'Famille Pst Jeean x3',
       'Corneille',
     ],
   },
@@ -150,8 +150,8 @@ const tables = [
     names: [
       'Nehemie',
       'Salem Mastaki',
-      'Christnovic',
-      'Guedally Shimba',
+      'GRACE GEMIMA',
+      'HERVE',
     ],
   },
   {
@@ -202,20 +202,20 @@ const tables = [
     city: 'BIFOUN',
     names: [
       'Naura',
-      'Teddy Stone',
-      'Judex',
+      'Teddy stone',
       'Rahma',
+      'Kana et Ruffin',
     ],
   },
   {
     num: 23,
     city: 'FOUGAMOU',
     names: [
-      'Mouendou Kevin',
       'Mboumba Lyonnel',
       'Maurice Obambi',
       'Ella Megne Jordan',
-      'Kabulo Junior',
+      'Junior KABULO',
+      'Kevin',
       'Thiry Toussaint',
     ],
   },
@@ -262,6 +262,17 @@ const tables = [
       'Zeinabou',
       'ASSAHI EUNICE',
       'Yoann NGOMO',
+    ],
+  },
+  {
+    num: 28,
+    city: 'GAMBA',
+    names: [
+      'LIFE',
+      'SHEKINNAH',
+      'Christnovic',
+      'Guedally ShimbaGRA',
+      'SYLVAIN',
     ],
   },
 ];

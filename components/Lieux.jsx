@@ -15,6 +15,12 @@ const MusicIcon = () => (
   </svg>
 );
 
+const DressIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 2L3 6H6L4.5 14H11.5L10 6H13L11 2C10 3.5 6 3.5 5 2Z" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" fill="none"/>
+  </svg>
+);
+
 const lieux = [
   {
     icon: <CrossIcon />,
@@ -38,7 +44,7 @@ const lieux = [
     dresscode: 'Chic & Élégant (pas de couleur exigée)',
     mapUrl: 'https://maps.app.goo.gl/WjBSC4UXikma5wzx6',
     mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.4!2d10.18!3d36.81!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSalle+Zitouna!5e0!3m2!1sfr!2stn!4v1620000000000',
-    image: null,
+    image: 'https://macvniqzcxgpeqeoyifh.supabase.co/storage/v1/object/public/logo/mrj.jpeg',
   },
 ];
 
@@ -59,10 +65,7 @@ export default function Lieux() {
           <div key={i} className={styles.card}>
 
             <div className={styles.cardVisual}>
-              {l.image
-                ? <img src={l.image} alt={l.name} className={styles.cardImg} />
-                : <div className={styles.cardImgPlaceholder} />
-              }
+              <img src={l.image} alt={l.name} className={styles.cardImg} />
               <div className={styles.cardVisualOverlay} />
               <span className={styles.badge}>
                 {l.icon}
@@ -83,10 +86,14 @@ export default function Lieux() {
                   <span className={styles.metaLabel}>Horaire</span>
                   <span className={styles.metaValue}>{l.time}</span>
                 </div>
-                <div className={styles.metaRow}>
-                  <span className={styles.metaLabel}>Dress code</span>
-                  <span className={styles.metaValue}>{l.dresscode}</span>
+              </div>
+
+              <div className={styles.dresscode}>
+                <div className={styles.dresscodeHeader}>
+                  <DressIcon />
+                  <span className={styles.dresscodeLabel}>Dress code</span>
                 </div>
+                <p className={styles.dresscodeValue}>{l.dresscode}</p>
               </div>
 
               <div className={styles.mapWrap}>
