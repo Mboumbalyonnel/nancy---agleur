@@ -2,25 +2,26 @@ import styles from './Menu.module.css';
 
 const menu = [
   {
-    category: 'Entrée',
+    category: 'Entrées',
     note: 'au choix',
-    items: ['Salade 1', 'Salade 2'],
+    items: ['Salade aux pâtes', 'Salade de crudités'],
   },
   {
     category: 'Légumes',
     note: 'au choix',
-    items: ['Aubergines à l \' oseille', 'Feuilles de manioc au maquereau fumé'],
+    items: ['Aubergines à l\'oseille', 'Feuilles de manioc au maquereau fumé'],
   },
   {
-    category: 'Poulet',
+    category: 'Volaille',
     note: 'au choix',
-    items: ['Poulet mayo', 'Tchiep poulet'],
+    items: ['Poulet mayonnaise', 'Tchiep au poulet'],
+    extras: [{ label: 'Ailes de poulet ou ailes de dinde', note: 'en supplément' }],
   },
   {
-    category: 'Accompagnement',
+    category: 'Accompagnements',
     note: 'au choix',
     items: ['Riz rouge', 'Riz blanc'],
-    extras: [{ label: 'Pomme de terre', note: 'en supplément' }],
+    extras: [{ label: 'Pommes de terre', note: 'en supplément' }],
   },
   {
     category: 'Dessert',
@@ -30,7 +31,7 @@ const menu = [
   {
     category: 'Boissons',
     note: '',
-    items: ['Eau', 'Jus de fruit', 'Soda', 'Jus de bissap'],
+    items: ['Eau', 'Jus de fruits', 'Sodas'],
   },
 ];
 

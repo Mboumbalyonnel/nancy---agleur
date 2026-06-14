@@ -1,7 +1,7 @@
 const tables = [
   {
     num: 1,
-    city: '',
+    city: 'MOUTOMBI MARIE',
     names: [
       'Arnold ISSAGA',
       'Déborah NTOUNTOUM',
@@ -12,7 +12,7 @@ const tables = [
   },
   {
     num: 2,
-    city: '',
+    city: 'NDOMBY JEAN LAMBER',
     names: [
       'Couple EZOUA',
       'Famille Pst Jean x3',
@@ -98,7 +98,7 @@ const tables = [
     names: [
       'Pasteur ARMAND',
       'ses 2 enfants',
-      'NGOYE Doracs et son amie',
+      'NGOYE Dorcas et son amie',
     ],
   },
   {
@@ -161,7 +161,7 @@ const tables = [
       'Ttji',
       'Edmas',
       'Floral',
-      'Eeunice',
+      'Eunice',
       'Nissye',
     ],
   },
