@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Hero       from '../components/Hero';
 import Programme  from '../components/Programme';
-import Menu       from '../components/Menu';
+// import Menu       from '../components/Menu';
 import Lieux      from '../components/Lieux';
 import Tables     from '../components/Tables';
 import Footer     from '../components/Footer';
@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <Programme />
-        <Menu />
+        {/* <Menu /> */}
         <Lieux />
         <Tables />
       </main>
